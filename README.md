@@ -1,28 +1,28 @@
 # Rubik-Solver
 
-Modelo en Java de un cubo de Rubik, con representación de caras y un giro de ejemplo por consola.
+A Java model of a Rubik's cube, with face representation and a sample turn printed to the console.
 
-El `main` de `RubikS_solver` crea un cubo, lo imprime, gira la cara frontal una vez y lo vuelve a imprimir. No recorre un algoritmo de resolución completo: el modelo y el giro viven en `RubikCube`.
+The `main` method in `RubikS_solver` creates a cube, prints it, turns the front face once, and prints it again. It does not run a full solving algorithm: the model and the turn live in `RubikCube`.
 
 ## Stack
 
 - Java
-- Proyecto NetBeans (`build.xml`, `nbproject`, `manifest.mf`)
+- NetBeans project (`build.xml`, `nbproject`, `manifest.mf`)
 
-## Estructura
+## Layout
 
 ```
-src/rubik/s_solver/RubikCube.java      # caras y rotateFaceClockwise
-src/rubik/s_solver/RubikS_solver.java  # main de demostración
+src/rubik/s_solver/RubikCube.java      # faces and rotateFaceClockwise
+src/rubik/s_solver/RubikS_solver.java  # demo main
 ```
 
-## Cómo ejecutarlo
+## How to run
 
-Abre el proyecto en NetBeans y ejecuta `rubik.s_solver.RubikS_solver`.
+Open the project in NetBeans and run `rubik.s_solver.RubikS_solver`.
 
 ```bash
 javac -d out src/rubik/s_solver/*.java
 java -cp out rubik.s_solver.RubikS_solver
 ```
 
-La salida es texto en la consola (`printCube`).
+Output is text on the console (`printCube`).
